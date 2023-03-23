@@ -3,7 +3,7 @@
 <div align=center><h3>영양음료 제조기업 이너르</h3></div>
 
 <div align=center>
-<img src="./img/responsive_innere.png" width="600px" height="auto" alt="이너르 클론코딩">
+<img src="./img/innere.png" width="600px" height="auto" alt="이너르 클론코딩">
 </div>
 
 
