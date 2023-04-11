@@ -30,13 +30,32 @@ header .innerHeader span{display:block;color:#fff;font-size: 35px;
 margin-right:10px; height: 100%; font-weight: normal;}
 
 /* section.visual */
-.visual{width: 100%; overflow:hidden; position:relative; background: blue; margin:0 auto;
-height:100vh;}
-.visual video{ 
-    position:absolute; top:50%; left: 50%; 
-    object-fit:cover; width: auto; height: auto; min-width:100vw; min-height: 100vh; 
+.visual{
+    width: 100%; 
+    height:100vh;
+    overflow:hidden; 
+    position:relative; 
+    z-index:0;
+    
+}
+.visual .videoBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.visual .videoBox video{ 
+    position:absolute; 
+    top:50%; 
+    left: 50%; 
+    z-index:2;
+    width: auto; 
+    height: auto; 
+    min-width:100%; 
+    min-height: 100%; 
     transform: translate(-50%,-50%); 
-    overflow:hidden;
 }
 
 
@@ -97,7 +116,7 @@ line-height:47px;}
 .main_2{width: 100%; overflow:hidden;}
 .main_2 .inner{width: 85%; margin:10px auto; font-size: 110px; font-family: 'Charis SIL', serif;}
 .main_2 .inner .titBox .black{ font-weight: normal;line-height: 130px; margin-bottom:45px;
- transform:translate(150px,-35px); letter-spacing: -2px;}
+transform:translate(150px,-35px); letter-spacing: -2px;}
 .main_2 .inner .titBox .white{color:#fff; 
     letter-spacing: 5px; font-size: 105px;
     text-shadow: -1px 0 #ccc, 0 1px #ccc, 1px 0 #ccc, 0 -1px #ccc;
